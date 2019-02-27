@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyDBManager</string>
+
+    <string name="database">Database</string>
+    <string name="schema">Schema</string>
+    <string name="table">Table</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

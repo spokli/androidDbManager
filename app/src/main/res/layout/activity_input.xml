@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".InputActivity">
+
+    <TextView android:text="@string/database" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_database" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn_database"
+        android:layout_below="@+id/tv_database"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:text="@string/schema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_schema"
+        android:layout_below="@+id/spn_database"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn_schema"
+        android:layout_alignParentStart="true"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/tv_schema"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text="@string/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_table"
+        android:layout_below="@+id/spn_schema"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn_table"
+        android:layout_alignParentStart="true"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/tv_table"
+        android:layout_alignParentLeft="true" />
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid_entries"
+        android:layout_below="@+id/spn_table"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:choiceMode="multipleChoice" />
+
+</RelativeLayout>
